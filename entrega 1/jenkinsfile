@@ -1,0 +1,37 @@
+pipeline{
+    agent any
+    tools{
+        maven 'maven'
+    }
+    stages{
+        stage('Build JAR File'){
+            steps{
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/MatiasYanezUsach/ProyectoMingeso.git']]])
+                bat 'mvn clean install -DskipTests'
+            }
+        }
+        stage('Test'){
+            steps{
+                bat 'mvn test'
+            }
+        }
+        stage('Build Docker Image'){
+            steps{
+                bat 'docker build -t matiasusach/mueblesstgo_app .'
+            }
+        }
+        stage('Push docker image'){
+            steps{
+                withCredentials([string(credentialsId: 'pass', variable: 'password')]) {
+                    bat 'docker login -u matiasusach -p %password%'
+                }
+                bat 'docker push matiasusach/mueblesstgo_app'
+            }
+        }
+    }
+    post{
+        always{
+            bat 'docker logout'
+        }
+    }
+}

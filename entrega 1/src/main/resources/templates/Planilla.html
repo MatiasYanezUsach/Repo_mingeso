@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Planilla de sueldos</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+<div class="container-sm">
+    <table class="table">
+        <thead class="thead-dark">
+        <tr class="m-4">
+            <th>ID</th>
+            <th>Rut</th>
+            <th>Nombre</th>
+            <th>Categoria</th>
+            <th>Años de servicio</th>
+            <th>Sueldo Fijo mensual</th>
+            <th>Bonificacion por años de servicio</th>
+            <th>Monto por horas extras</th>
+            <th>Monto descuentos</th>
+            <th>Sueldo bruto</th>
+            <th>Monto por cotizacion previsional</th>
+            <th>Monto por cotizacion salud</th>
+            <th>Monto sueldo final</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="sueldo:${sueldos}">
+            <td th:text="${sueldo.id_sueldo}"></td>
+            <td th:text="${sueldo.rut}"></td>
+            <td th:text="${sueldo.nombre_empleado}"></td>
+            <td th:text="${sueldo.categoria}"></td>
+            <td th:text="${sueldo.anios_servicio}"></td>
+            <td th:text="${sueldo.sueldo_fijo_mensual}"></td>
+            <td th:text="${sueldo.monto_bonificacion_anios_servicio}"></td>
+            <td th:text="${sueldo.monto_pago_horas_extras}"></td>
+            <td th:text="${sueldo.monto_descuentos}"></td>
+            <td th:text="${sueldo.sueldo_bruto}"></td>
+            <td th:text="${sueldo.cotizacion_previsional}"></td>
+            <td th:text="${sueldo.cotizacion_salud}"></td>
+            <td th:text="${sueldo.monto_sueldo_final}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

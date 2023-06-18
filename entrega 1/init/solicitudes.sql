@@ -1,0 +1,14 @@
+insert into solicitudes (rut_empleado, fecha_cubridora) values ('20.580.291-6','2022-10-25');
+insert into solicitudes (rut_empleado, fecha_cubridora) values ('20.580.291-6','2022-10-26');
+insert into solicitudes (rut_empleado, fecha_cubridora) values ('13.209.219-8','2022-10-27');
+insert into solicitudes (rut_empleado, fecha_cubridora) values ('13.209.219-8','2022-10-28');
+insert into solicitudes (rut_empleado, fecha_cubridora) values ('13.209.219-8','2022-10-31');
+insert into solicitudes (rut_empleado, fecha_cubridora) values ('13.209.219-8','2022-10-24');
+insert into solicitudes (rut_empleado, fecha_cubridora) values ('14.361.782-8','2022-10-25');
+insert into solicitudes (rut_empleado, fecha_cubridora) values ('20.554.689-1','2022-10-26');
+insert into solicitudes (rut_empleado, fecha_cubridora) values ('14.209.219-9','2022-10-27');
+insert into solicitudes (rut_empleado, fecha_cubridora) values ('20.000.000-1','2022-10-28');
+insert into solicitudes (rut_empleado, fecha_cubridora) values ('13.198.194-9','2022-10-31');
+insert into solicitudes (rut_empleado, fecha_cubridora) values ('13.198.194-9','2022-10-24');
+insert into solicitudes (rut_empleado, fecha_cubridora) values ('15.447.346-3','2022-10-25');
+insert into solicitudes (rut_empleado, fecha_cubridora) values ('13.009.202-2','2022-10-26');

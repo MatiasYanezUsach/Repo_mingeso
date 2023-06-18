@@ -1,0 +1,11 @@
+insert into empleados (rut, apellidos, nombres, fecha_nac, categoria, fecha_in) values ('20.580.291-6', 'Yanez', 'Matias', '2001-03-02', 'A', '2015-09-03');
+insert into justificativos ( rut_empleado, fecha_cubridora, fecha_emision, firma, motivo, empresa_emisora) values ('20.580.291-6', '2022-09-12', '2022-09-09', 'RRHH','licencia','mueblesSTGO');
+insert into justificativos ( rut_empleado, fecha_cubridora, fecha_emision, firma, motivo, empresa_emisora) values ('20.580.291-6', '2022-09-13', '2022-09-09', 'RRHH','licencia','mueblesSTGO');
+insert into justificativos ( rut_empleado, fecha_cubridora, fecha_emision, firma, motivo, empresa_emisora) values ('20.580.291-6', '2022-09-14', '2022-09-09', 'RRHH','licencia','mueblesSTGO');
+insert into justificativos ( rut_empleado, fecha_cubridora, fecha_emision, firma, motivo, empresa_emisora) values ('20.580.291-6', '2022-09-15', '2022-09-09', 'RRHH','licencia','mueblesSTGO');
+insert into justificativos ( rut_empleado, fecha_cubridora, fecha_emision, firma, motivo, empresa_emisora) values ('20.580.291-6', '2022-09-16', '2022-09-09', 'RRHH','licencia','mueblesSTGO');
+insert into solicitudes (rut_empleado, fecha_emision, fecha_cubridora, correo_jefatura) values ('20.580.291-6','2022-09-20','2022-09-26','empresa@muebesstgo.com');
+insert into solicitudes (rut_empleado, fecha_emision, fecha_cubridora, correo_jefatura) values ('20.580.291-6','2022-09-20','2022-09-27','empresa@muebesstgo.com');
+insert into solicitudes (rut_empleado, fecha_emision, fecha_cubridora, correo_jefatura) values ('20.580.291-6','2022-09-20','2022-09-28','empresa@muebesstgo.com');
+insert into solicitudes (rut_empleado, fecha_emision, fecha_cubridora, correo_jefatura) values ('20.580.291-6','2022-09-20','2022-09-29','empresa@muebesstgo.com');
+insert into solicitudes (rut_empleado, fecha_emision, fecha_cubridora, correo_jefatura) values ('20.580.291-6','2022-09-20','2022-09-30','empresa@muebesstgo.com');

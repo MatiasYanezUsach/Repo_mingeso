@@ -1,0 +1,5 @@
+terraform init = inicializar el proyecto.
+terraform fmt = ordena el codigo del archivo main.
+terraform validate = validar que el archivo main sea valido para el proveedor
+terraform plan = crea una vista de lo que se va a crear dentro de la arquitectura que se da al proveedor
+

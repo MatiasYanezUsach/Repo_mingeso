@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Registro de marcas de reloj</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+<div class="container-sm">
+    <table class="table">
+        <thead class="thead-dark">
+        <tr class="m-4">
+            <th>ID</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Rut</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="marca:${marcas}">
+            <td th:text="${marca.id_marca}"></td>
+            <td th:text="${marca.fecha}"></td>
+            <td th:text="${marca.hora}"></td>
+            <td th:text="${marca.rut_empleado}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Origin Access-control-Allow-Credentials, RETAIN_UNIQUE
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowed-origin-patterns: '*'
+            allowed-methods: "*"
+            allowed-headers: "*"
+            allow-Credentials: true
+      routes:
+        - id: microservice-empleado
+          uri: lb://microservice-empleado
+          predicates:
+            - Path=/empleado/**
+        - id: microservice-justificativo
+          uri: lb://microservice-justificativo
+          predicates:
+            - Path=/justificativo/**
+        - id: microservice-solicitud
+          uri: lb://microservice-solicitud
+          predicates:
+            - Path=/solicitud/**
+        - id: microservice-reloj
+          uri: lb://microservice-reloj
+          predicates:
+            - Path=/marcas/**
+        - id: microservice-sueldo
+          uri: lb://microservice-sueldo
+          predicates:
+            - Path=/sueldo/** 
+        - id: microservice-sueldo
+          uri: lb://microservice-sueldo
+          predicates:
+            - Path=/actuator/**  
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka}  
+  instance:
+    hostname: localhost                  

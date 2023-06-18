@@ -1,0 +1,10 @@
+insert into empleados (rut, apellidos, nombres, fecha_nac, categoria, fecha_in) values ('20.580.291-6', 'Yanez', 'Matias', '2000-06-15', 'A', '2021-09-03');
+insert into empleados (rut, apellidos, nombres, fecha_nac, categoria, fecha_in) values ('12.345.678-9', 'Castillo', 'Lucas', '2000-02-11', 'B', '2018-08-02');
+insert into empleados (rut, apellidos, nombres, fecha_nac, categoria, fecha_in) values ('13.209.219-8', 'Quito', 'Esteban', '2001-03-02', 'C', '2022-01-01');
+insert into empleados (rut, apellidos, nombres, fecha_nac, categoria, fecha_in) values ('14.361.782-8', 'Llanos', 'Ibai', '1980-04-28', 'A', '1997-02-09');
+insert into empleados (rut, apellidos, nombres, fecha_nac, categoria, fecha_in) values ('20.554.689-1', 'Hornbuckle', 'Stephanie', '1975-05-30', 'B', '1990-03-04');
+insert into empleados (rut, apellidos, nombres, fecha_nac, categoria, fecha_in) values ('14.209.219-9', 'Mesas', 'Armando', '1999-07-15', 'C', '2020-01-03');
+insert into empleados (rut, apellidos, nombres, fecha_nac, categoria, fecha_in) values ('20.000.000-1', 'Pino', 'Aurelio', '2000-03-09', 'A', '2015-09-01');
+insert into empleados (rut, apellidos, nombres, fecha_nac, categoria, fecha_in) values ('13.198.194-9', 'Palma', 'Debora', '1970-09-09', 'B', '1990-04-27');
+insert into empleados (rut, apellidos, nombres, fecha_nac, categoria, fecha_in) values ('15.447.346-3', 'Messi', 'Lionel', '2001-05-05', 'C', '2019-04-09');
+insert into empleados (rut, apellidos, nombres, fecha_nac, categoria, fecha_in) values ('13.009.202-2', 'Lillo', 'Victor', '1999-08-30', 'A', '2014-03-17');

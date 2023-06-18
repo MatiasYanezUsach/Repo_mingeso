@@ -1,0 +1,3 @@
+id clave acceso = AKIA2X5HLY647BMGH2OU
+clave de acceso secreta = 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
+contraseña = !ggaP_4F'y2woId
